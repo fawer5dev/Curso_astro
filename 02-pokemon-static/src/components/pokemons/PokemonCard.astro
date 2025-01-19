@@ -9,7 +9,10 @@ const id = url.split('/').at(-2);
 const imgScr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;;
 ---
 
-<div class="rounder flex flex-col justify-center items-center bg-slate-700 p-4">
+
+<a
+href={`/pokemons/${name}`} 
+class="rounder flex flex-col justify-center items-center bg-slate-700 p-4">
     <img src={imgScr} alt={name} />
-    <span>{name}</span>
-</div>
+    <span class="capitalize">{name}</span>
+</a>
